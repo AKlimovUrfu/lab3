@@ -1,0 +1,52 @@
+{
+  "linear_regression": {
+    "test_mse": 4.082628
+  },
+  "classification": {
+    "own_logistic": {
+      "roc_auc": 0.808095,
+      "accuracy": 0.77,
+      "precision": 0.801282,
+      "recall": 0.892857,
+      "f1": 0.844595
+    },
+    "logistic_regression": {
+      "roc_auc": 0.808095,
+      "accuracy": 0.77,
+      "precision": 0.801282,
+      "recall": 0.892857,
+      "f1": 0.844595
+    },
+    "decision_tree": {
+      "roc_auc": 0.690952,
+      "accuracy": 0.7,
+      "precision": 0.822581,
+      "recall": 0.728571,
+      "f1": 0.772727
+    },
+    "knn": {
+      "roc_auc": 0.8225,
+      "accuracy": 0.76,
+      "precision": 0.747312,
+      "recall": 0.992857,
+      "f1": 0.852761
+    }
+  },
+  "meta": {
+    "split": {
+      "test_size": 0.2,
+      "random_state": 42,
+      "stratify_classification": true
+    },
+    "regression_params": {
+      "learning_rate": 0.05,
+      "epochs": 800
+    },
+    "classification_params": {
+      "learning_rate": 0.1,
+      "epochs": 1000,
+      "threshold": 0.5
+    },
+    "logistic_final_grad_norm": 0.0001241
+  }
+}
